@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="containerUp">
+        <div class="containerInfo">
+
+            <div class="containerDate">
+                <div class="containerDate__time" id="time">
+                     <span id="am-pm"></span>
+                </div>
+
+                <div class="containerDate__date" id="date">
+                   
+                </div>
+
+                <div class="containerDate__items" id="current-items">
+
+
+                </div>
+            </div>
+
+
+            <div class="cityCountainer">
+                <div class="cityCountainer__time" id="cityTime"></div>
+                <div class="cityCountainer__country" id="cityCountry"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="nextForecastsCountainer">
+        <div class="weatherCurrentCardFirts" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="w-icon" class="w-icon">
+            <div class="weatherCurrentCardFirts__containerValues">
+                <div class="weatherCurrentCardFirts__day"></div>
+                <div class="weatherCurrentCardFirts__temp"></div>
+                <div class="weatherCurrentCardFirts__temp"></div>
+            </div>
+
+        </div>
+
+        <div class="weatherCountainer" id="weather-forecast">
+            <div class="weatherCountainer__item">
+                <div class="weatherCurrentCard__day"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="w-icon" class="w-icon">
+                <div class="weatherCurrentCard__temp"></div>
+                <div class="weatherCurrentCard__temp"></div>
+            </div>
+            <div class="weatherCountainer__item">
+                <div class="weatherCurrentCard__day"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="w-icon" class="w-icon">
+                <div class="weatherCurrentCard__temp"></div>
+                <div class="weatherCurrentCard__temp"></div>
+            </div>
+            <div class="weatherCountainer__item">
+                <div class="weatherCurrentCard__day"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="w-icon" class="w-icon">
+                <div class="weatherCurrentCard__temp"></div>
+                <div class="weatherCurrentCard__temp"></div>
+            </div>
+            <div class="weatherCountainer__item">
+                <div class="weatherCurrentCard__day"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="w-icon" class="w-icon">
+                <div class="weatherCurrentCard__temp"></div>
+                <div class="weatherCurrentCard__temp"></div>
+            </div>
+            <div class="weatherCountainer__item">
+                <div class="weatherCurrentCard__day"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="w-icon" class="w-icon">
+                <div class="weatherCurrentCard__temp"></div>
+                <div class="weatherCurrentCard__temp"></div>
+            </div>
+            <div class="weatherCountainer__item">
+                <div class="weatherCurrentCard__day"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="w-icon" class="w-icon">
+                <div class="weatherCurrentCard__temp"></div>
+                <div class="weatherCurrentCard__temp"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

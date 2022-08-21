@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lora&family=PT+Sans&family=Poppins:wght@100;200;400;700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('./image/sea-7344974_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerUp {
+    padding: 20px 70px;
+    color:#fff;
+    height: 100%;
+}
+
+.containerInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containerDate {
+    font-weight: 100;
+}
+
+.containerDate .containerDate__time {
+    font-size: 70px;
+}
+
+.containerDate #am-pm {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.containerDate .containerDate__date {
+    font-size: 30px;
+}
+
+.cityCountainer {
+    text-align: end;
+}
+
+.cityCountainer__time {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.cityCountainer__country {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.containerDate__items {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(24, 24, 27, 0.6);
+    padding: 25px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.nextForecastsCountainer {
+    background: rgba(24,24,27,0.8);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+}
+
+.weatherCurrentCardFirts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.weatherCurrentCardFirts__day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weatherCurrentCardFirts__temp{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.nextForecastsCountainer .weatherCountainer {
+    display: flex;
+}
+
+.weatherCountainer__item{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.weatherCurrentCard__day{
+    padding: 5px 15px;
+    background-color: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weatherCurrentCard__temp{
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width:730px){
+
+    .nextForecastsCountainer{
+        justify-content: start;
+        align-items: none;
+        overflow: scroll;
+        
+    }
+
+    .containerDate .containerDate__time {
+        font-size: 50px;
+    }
+
+    .containerDate #am-pm {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .containerDate .containerDate__date {
+        font-size: 20px;
+    }
+
+    .cityCountainer {
+        text-align: end;
+        margin-top: 15px;
+
+    }
+
+    .cityCountainer__time{
+        font-size: 20px;
+
+    }
+
+    .containerDate__items{
+        padding: 12px;
+    }
+
+
+    
+}
